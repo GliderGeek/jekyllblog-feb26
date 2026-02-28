@@ -1,51 +1,43 @@
+---
 title: My Jekyll Blog
-description: >-
-  A personal blog built with Jekyll, published on GitHub Pages,
-  and managed with Siteleaf.
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    author: Matthijs
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+description: A personal blog built with Jekyll, published on GitHub Pages, and managed
+  with Siteleaf.
 author:
   name: Matthijs
   email: your@email.com
   twitter: yourusername
-
-# GitHub Pages settings
-# Set baseurl to your repo name if using a project page (e.g. /jekyllblog-feb26)
-# Leave empty if using a user/org page (username.github.io)
 baseurl: "/jekyllblog-feb26"
-url: "https://glidergeek.github.io"
-
-# Build settings
+url: https://glidergeek.github.io
 markdown: kramdown
 highlighter: rouge
-
 plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-
-# Permalink structure
-permalink: /blog/:year/:month/:day/:title/
-
-# Front matter defaults
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-      author: Matthijs
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: page
-
-# Siteleaf — connect your repo at manage.siteleaf.com
-# No extra config needed; Siteleaf reads your _config.yml automatically
-
-# Exclude from build
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-sitemap
+permalink: "/blog/:year/:month/:day/:title/"
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - .gitignore
-  - README.md
-  - vendor/
+- Gemfile
+- Gemfile.lock
+- ".gitignore"
+- README.md
+- vendor/

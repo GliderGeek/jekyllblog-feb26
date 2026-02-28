@@ -1,13 +1,14 @@
 ---
-layout: post
-title: "Getting Started with Jekyll"
-date: 2026-02-27
-author: Your Name
-description: "A quick primer on Jekyll — what it is, how it works, and why it pairs perfectly with GitHub Pages."
+title: Getting Started with Jekyll
+date: 2026-02-27 00:00:00 Z
 tags:
-  - jekyll
-  - tutorial
-  - github-pages
+- jekyll
+- tutorial
+- github-pages
+layout: post
+author: Your Name
+description: A quick primer on Jekyll — what it is, how it works, and why it pairs
+  perfectly with GitHub Pages.
 ---
 
 [Jekyll](https://jekyllrb.com) is a static site generator written in Ruby. You write your content in **Markdown**, define layouts in **HTML + Liquid**, and Jekyll compiles everything into a folder of plain HTML files ready to be served by any web host.

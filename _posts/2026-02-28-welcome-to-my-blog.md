@@ -1,12 +1,12 @@
 ---
-layout: post
-title: "Welcome to My Blog"
-date: 2026-02-28
-author: Your Name
-description: "An introduction to this blog and what you can expect to find here."
+title: Welcome to My Blog
+date: 2026-02-28 00:00:00 Z
 tags:
-  - meta
-  - introduction
+- meta
+- introduction
+layout: post
+author: Your Name
+description: An introduction to this blog and what you can expect to find here.
 ---
 
 Hello, and welcome! This is the first post on my new blog, built with **Jekyll** and published on **GitHub Pages**.
